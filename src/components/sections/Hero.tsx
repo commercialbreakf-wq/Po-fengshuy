@@ -11,10 +11,12 @@ export function Hero() {
         <video
           autoPlay
           muted
+          loop
           playsInline
+          poster="/hero_bg.jpg"
           className="w-full h-full object-cover opacity-60"
         >
-          <source src="/123.mp4" type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-[#111111]/40 pointer-events-none" />
       </div>
@@ -23,9 +25,9 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-6 max-w-7xl pt-20">
         <div className="max-w-4xl">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
             <span className="inline-block px-4 py-1.5 rounded-full glass border border-white/20 text-white/90 text-sm font-medium tracking-wider mb-6">
               PREMIUM REAL ESTATE
@@ -33,9 +35,9 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.6, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight leading-[1.1] mb-8"
           >
             <a href="#projects" className="hover:text-white/80 transition-colors cursor-pointer">
@@ -44,20 +46,18 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.6, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="text-xl md:text-2xl text-white/80 font-light max-w-2xl leading-relaxed mb-12"
           >
             От доступных уютных домов до премиальных резиденций под ключ. Мы создаем пространство для вашей лучшей жизни.
           </motion.p>
 
-
-
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.6, delay: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row gap-6 items-start"
           >
             <MagneticButton href="#calculator" variant="primary">
@@ -72,9 +72,9 @@ export function Hero() {
 
       {/* Floating Statistics */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 1.6, delay: 1.5, ease: [0.16, 1, 0.3, 1] }}
         className="absolute bottom-12 right-6 md:right-12 hidden lg:flex gap-8 glass px-8 py-6 rounded-2xl"
       >
         <div>

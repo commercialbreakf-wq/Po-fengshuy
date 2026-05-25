@@ -5,6 +5,7 @@ import { SmoothScroll } from "@/components/ui/SmoothScroll";
 import { Header } from "@/components/ui/Header";
 import { Toaster } from "sonner";
 import { ContactModal } from "@/components/ui/ContactModal";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Header />
           {children}
           <ContactModal />
+          <ScrollToTop />
           <Toaster position="bottom-right" />
         </SmoothScroll>
       </body>
